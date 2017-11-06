@@ -1,0 +1,218 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase">tab切换标签--左上( div<code>.tabbable-line</code>)</span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a></a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Begin: life time stats -->
+                        <div class="portlet light portlet-fit portlet-datatable bordered">
+                            <div class="portlet-body">
+                                <div class="tabbable-line">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#tab_1_1" data-toggle="tab" >参会嘉宾</a>
+                                        </li>
+                                        <li>
+                                        <a href="#tab_1_2" data-toggle="tab" > 参会专家 </a>
+                                        </li>
+                                        <li>
+                                        <a href="#tab_1_3" data-toggle="tab" >参会媒体</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_1_4" data-toggle="tab" >参会</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab_1_1">
+                                            <h4>tab1的内容</h4>
+                                        </div>
+                                        <div class="tab-pane" id="tab_1_2">
+                                            <h4>tab2的内容</h4>
+                                        </div>
+                                        <div class="tab-pane" id="tab_1_3">
+                                            <h4>tab3的内容</h4>
+                                        </div>
+                                        <div class="tab-pane" id="tab_1_4">
+                                            <h4>tab4的内容</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End: life time stats -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- END FORM-->
+                </div>
+            </div>
+        </div>
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase">tab切换标签--左下(div <code>.tabbable-line .tabs-below</code>)</span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a></a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Begin: life time stats -->
+                        <div class="portlet light portlet-fit portlet-datatable bordered">
+                            <div class="portlet-body">
+                                <div class="tabbable-line tabs-below">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab_2_1">
+                                            <h4>tab1的内容</h4>
+                                        </div>
+                                        <div class="tab-pane" id="tab_2_2">
+                                            <h4>tab2的内容</h4>
+                                        </div>
+                                        <div class="tab-pane" id="tab_2_3">
+                                            <h4>tab3的内容</h4>
+                                        </div>
+                                    </div>
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#tab_2_1" data-toggle="tab" >参会嘉宾</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_2_2" data-toggle="tab" > 参会专家 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_2_3" data-toggle="tab" >参会媒体</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End: life time stats -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- END FORM-->
+                </div>
+            </div>
+        </div>
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase">tab切换标签--右上(div <code>.tabbable-line</code> ul<code> .tabs-reversed</code>)</span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a></a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Begin: life time stats -->
+                        <div class="portlet light portlet-fit portlet-datatable bordered">
+                            <div class="portlet-body">
+                                <div class="tabbable-line ">
+                                    <ul class="nav nav-tabs tabs-reversed">
+                                        <li class="active">
+                                            <a href="#tab_3_1" data-toggle="tab" >参会嘉宾</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_3_2" data-toggle="tab" > 参会专家 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_3_3" data-toggle="tab" >参会媒体</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab_3_1">
+                                            <h4>tab1的内容</h4>
+                                        </div>
+                                        <div class="tab-pane" id="tab_3_2">
+                                            <h4>tab2的内容</h4>
+                                        </div>
+                                        <div class="tab-pane" id="tab_3_3">
+                                            <h4>tab3的内容</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End: life time stats -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- END FORM-->
+                </div>
+            </div>
+        </div>
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase">tab切换标签--内容区域框(div <code>.tabbable-custom </code>)</span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a></a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Begin: life time stats -->
+                        <div class="portlet light portlet-fit portlet-datatable bordered">
+                            <div class="portlet-body">
+                                <div class="tabbable-custom ">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#tab_4_1" data-toggle="tab" >参会嘉宾</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_4_2" data-toggle="tab" > 参会专家 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_4_3" data-toggle="tab" >参会媒体</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab_4_1">
+                                            <h4>tab1的内容</h4>
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_2">
+                                            <h4>tab2的内容</h4>
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_3">
+                                            <h4>tab3的内容</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End: life time stats -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- END FORM-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

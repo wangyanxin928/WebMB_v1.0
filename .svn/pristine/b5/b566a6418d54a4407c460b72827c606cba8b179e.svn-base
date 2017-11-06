@@ -1,0 +1,406 @@
+<!--文本框+lable  start-->
+<div class="portlet light  ">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold font-grey-gallery uppercase"> 文本框+lable </span>
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a>   </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <form class="form-horizontal">
+            <div class="form-body">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="form-group">
+                            <label class="control-label col-md-4">普通输入框</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control " placeholder="普通输入框">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                        <div class="sampleHtml">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                    <label>编号：Input-01</label>
+                                </div>
+                            </div>
+                            <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                 data-keyboard="false">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true"></button>
+                                    <h4 class="modal-title">普通输入框</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="exampleCode">
+                                    <textarea name="" id="textarea-val0" cols="30" rows="15">
+  <div class="row">
+      <div class="col-md-7">
+          <div class="form-group">
+              <label class="control-label col-md-4">普通输入框</label>
+                    <div class="col-md-8">
+                         <input type="text" class="form-control" placeholder="普通输入框">
+                    </div>
+              </div>
+          </div>
+      <div class="col-md-5"></div>
+  </div></textarea>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer ">
+                                    <button type="button" data-dismiss="modal" class="btn btn-default " id="noCheck">
+                                        关闭
+                                    </button>
+                                    <button class="copyHtml btn blue" data-clipboard-target="#textarea-val0">复制代码
+                                    </button>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="form-group">
+                            <label class="control-label col-md-4">不可用输入框</label>
+                            <div class="col-md-8">
+                                <input type="text" disabled class="form-control" placeholder="不可用输入框">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                        <div class="sampleHtml">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                    <label class="control-label">编号：Input-02</label>
+                                </div>
+                            </div>
+                            <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                 data-keyboard="false">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true"></button>
+                                    <h4 class="modal-title">不可用输入框</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="exampleCode">
+                                    <textarea name="" id="textarea-val1" cols="30" rows="15">
+  <div class="row">
+      <div class="col-md-7">
+          <div class="form-group">
+              <label class="control-label col-md-4">不可用输入框</label>
+              <div class="col-md-8">
+                  <input type="text" disabled class="form-control" placeholder="不可用输入框">
+              </div>
+          </div>
+      </div>
+      <div class="col-md-5"></div>
+  </div></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer ">
+                                    <button type="button" data-dismiss="modal" class="btn btn-default ">关闭</button>
+                                    <button class="copyHtml btn blue" data-clipboard-target="#textarea-val1">复制代码
+                                    </button>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="form-group">
+                            <label class="control-label col-md-4">只读输入框</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control " readonly placeholder="只读输入框">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                        <div class="sampleHtml">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                    <label class="control-label">编号：Input-03</label>
+                                </div>
+                            </div>
+                            <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                 data-keyboard="false">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true"></button>
+                                    <h4 class="modal-title">只读输入框</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="exampleCode">
+                                    <textarea name="" id="textarea-val2" cols="30" rows="15">
+  <div class="row">
+      <div class="col-md-7">
+          <div class="form-group">
+              <label class="control-label col-md-4">只读输入框</label>
+                  <div class="col-md-8">
+                       <input type="text" class="form-control " readonly placeholder="只读输入框">
+                  </div>
+          </div>
+      </div>
+      <div class="col-md-5"></div>
+  </div></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer ">
+                                    <button type="button" data-dismiss="modal" class="btn btn-default ">关闭</button>
+                                    <button class="copyHtml btn blue" data-clipboard-target="#textarea-val2">复制代码
+                                    </button>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- END FORM-->
+    </div>
+</div>
+<!--文本框+lable end-->
+<!--不同大小的输入框  start-->
+<div class="portlet light  ">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold font-grey-gallery uppercase"> 不同大小的输入框 </span>
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a>   </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <form  class="">
+            <div class="form-body">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <label class=" control-label col-md-4 ">编号：input-04</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control input-xsmall " placeholder=".input-xsmall">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <pre>&lt;input type="text" class="form-control input-xsmall " placeholder=".input-xsmall"&gt;</pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <label class=" control-label col-md-4 ">编号：input-05</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control input-small " placeholder=".input-small">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <pre>&lt;input type="text" class="form-control input-small " placeholder=".input-small"&gt;</pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <label class=" control-label col-md-4 ">编号：input-06</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control input-medium " placeholder=".input-medium">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <pre>&lt;input type="text" class="form-control input-medium " placeholder=".input-medium"&gt;</pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <label class=" control-label col-md-4 ">编号：input-07</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control input-large " placeholder=".input-large">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <pre>&lt;input type="text" class="form-control input-large " placeholder=".input-large"&gt;</pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <label class=" control-label col-md-4">编号：input-08</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control input-xlarge " placeholder=".input-xlarge">
+                            </div>
+                        </div>
+                        <div class="col-md-12   margin-top-15">
+                            <pre>&lt;input type="text" class="form-control input-xlarge " placeholder=".input-xlarge"&gt;</pre>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <label class=" control-label col-md-4">编号：input-09</label>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control " placeholder="fluid">
+                        </div>
+                        <div class="col-md-12   margin-top-15">
+                            <pre>&lt;input type="text" class="form-control margin-top-15" placeholder="fluid"&gt;</pre>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </form>
+        <!-- END FORM-->
+    </div>
+</div>
+<!--不同大小的输入框 end-->
+<!--不同高度的输入框  start-->
+<div class="portlet light  ">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold font-grey-gallery uppercase"> 不同高度的输入框 </span>
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a>   </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <form>
+            <div class="form-body">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <label class=" control-label col-md-4">编号：input-10</label>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control input-sm" placeholder="input-sm">
+                        </div>
+                        <div class="col-md-12   margin-top-15">
+                            <pre>&lt;input type="text" class="form-control input-sm" placeholder="input-sm"&gt;</pre>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <label class=" control-label col-md-4">编号：input-11</label>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control " placeholder="">
+                        </div>
+                        <div class="col-md-12   margin-top-15">
+                            <pre>&lt;input type="text" class="form-control " placeholder=""&gt;</pre>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <label class=" control-label col-md-4">编号：input-12</label>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control input-lg " placeholder="input-lg">
+                        </div>
+                        <div class="col-md-12   margin-top-15">
+                            <pre>&lt;input type="text" class="form-control input-lg " placeholder="input-lg"&gt;</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- END FORM-->
+    </div>
+</div>
+<!--不同高度的输入框 end-->
+<!--不同的textarea star-->
+<div class="portlet light  ">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold font-grey-gallery uppercase"> 多行输入框Textarea </span>
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a>   </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <form class="form-horizontal">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <label class="control-label col-md-4">多行输入框</label>
+                        <div class="col-md-8">
+                            <textarea name="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                    <div class="sampleHtml">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                <label class="control-label">编号：Input-13</label>
+                            </div>
+                        </div>
+                        <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                             data-keyboard="false">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true"></button>
+                                <h4 class="modal-title">多行输入框</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="exampleCode">
+                                    <textarea name="" id="textarea-val3" cols="30" rows="15">
+  <div class="row">
+      <div class="col-md-7">
+          <div class="form-group">
+              <label class="control-label col-md-4">多行输入框</label>
+              <div class="col-md-8">
+                  &lt;textarea name="" cols="30" rows="10"&gt;&lt;/textarea&gt;
+              </div>
+          </div>
+      </div>
+      <div class="col-md-5"></div>
+  </div></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="button" data-dismiss="modal" class="btn btn-default ">关闭</button>
+                                <button class="copyHtml btn blue" data-clipboard-target="#textarea-val3">复制代码
+                                </button>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                </div>
+            </div>
+        </form>
+        <!-- END FORM-->
+    </div>
+</div>
+<!--不同的textarea end-->

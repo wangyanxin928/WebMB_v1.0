@@ -1,0 +1,392 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase">  单选按钮注意事项--使用步骤 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <ol>
+                    <li>使用框架模版html／js等文件结构</li>
+                    <li>一组单选按钮的name必须相同</li>
+                    <li>查看在main文件内是否声引入icheck.js与是否初始化icheck</li>
+                    <li>请在模版javascript模版文件的 afterRender:function(){}方法中是否初始化单选控件</li>
+                    <li>例：
+                        <pre>
+ afterRender:function(){
+    var me=this;
+    <span class="code-notes">//如要初始化当前View中的全部单选按钮，使用下面的代码</span>
+    // BasePluginsUTIL.initCheck();
+    <span class="code-notes"> //如果要初始化某个范围内的单选按钮，请在form设置id</span>
+    BasePluginsUTIL.initCheck(me.$("#你的id名"));
+    <span class="code-notes">//初始化单选按钮事件，先绑定事件再初始化插件</span>
+    this.initCheckEvent();
+    <span class="code-notes">//先初始化icheck</span>
+    BasePluginsUTIL.initCheck(me.$("#form3"));
+    $('#haveEventGroup3 input').iCheck('disable');
+    <span class="code-notes">//初始化自定义className的icheck</span>
+    BasePluginsUTIL.initCheck(me.$("#form4"),"myIcheck");
+ }</pre>
+                    </li>
+                    <li>
+                        结构
+                        <pre>
+&lt;form class="form-horizontal" id="form1"&gt;
+    &lt;div class="form-body"&gt;
+    <span class="code-notes">&lt;!-- 请在这里替换内容start --&gt;</span>
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-7"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label class="col-md-4 control-label"&gt;单选按钮&lt;/label&gt;
+                        &lt;div class="col-md-8"&gt;
+
+                            &lt;div class="input-group"&gt;
+                                &lt;div class="icheck-list"&gt;
+                                    &lt;label&gt;&lt;input type="radio" name="radio1" class="icheck" data-radio="iradio_flat-green"&gt; 小学&lt;/label&gt;
+                                    &lt;label&gt;&lt;input type="radio" name="radio1" checked class="icheck" data-radio="iradio_flat-green"&gt;小学教学点 &lt;/label&gt;
+                                    &lt;label&gt;&lt;input type="radio" name="radio1" class="icheck" data-radio="iradio_flat-green"&gt;附设教学班 &lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;div class="col-md-5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+     <span class="code-notes">&lt;!-- 请在这里替换内容end --&gt;</span>
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 一般单选按钮 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form1">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">单选按钮</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-list">
+                                                <label>
+                                                    <input type="radio" name="radio1" class="icheck"
+                                                           data-radio="iradio_flat-green"> 小学</label>
+                                                <label>
+                                                    <input type="radio" name="radio1" checked class="icheck"
+                                                           data-radio="iradio_flat-green">小学教学点 </label>
+                                                <label>
+                                                    <input type="radio" name="radio1" class="icheck"
+                                                           data-radio="iradio_flat-green">附设教学班 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：radio-01</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">单选按钮</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="textarea-val2" cols="30" rows="15">
+&lt;!-- 替换内容start --&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-7"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label class="col-md-4 control-label"&gt;单选按钮&lt;/label&gt;
+                        &lt;div class="col-md-8"&gt;
+
+                            &lt;div class="input-group"&gt;
+                                &lt;div class="icheck-list"&gt;
+                                    &lt;label&gt;&lt;input type="radio" name="radio1" class="icheck" data-radio="iradio_flat-green"&gt; 小学&lt;/label&gt;
+                                    &lt;label&gt;&lt;input type="radio" name="radio1" checked class="icheck" data-radio="iradio_flat-green"&gt;小学教学点 &lt;/label&gt;
+                                    &lt;label&gt;&lt;input type="radio" name="radio1" class="icheck" data-radio="iradio_flat-green"&gt;附设教学班 &lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;div class="col-md-5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+&lt;!-- 替换内容end --&gt;
+</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#textarea-val2">
+                                                复制代码
+                                            </button>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">单选按钮</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-inline">
+                                                <label>
+                                                    <input type="radio" name="radio2" class="icheck"
+                                                           data-radio="iradio_flat-green"> 普通初中</label>
+                                                <label>
+                                                    <input type="radio" name="radio2" checked class="icheck"
+                                                           data-radio="iradio_flat-green">普通高中</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：radio-02</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">单选按钮</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="textarea-val1" cols="30" rows="15">
+&lt;!-- 替换内容start --&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-7"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label class="col-md-4 control-label"&gt;单选按钮&lt;/label&gt;
+                        &lt;div class="col-md-8"&gt;
+                            &lt;div class="input-group">
+                                &lt;div class="icheck-inline"&gt;
+                                        &lt;label&gt;&lt;input type="radio" name="radio2" class="icheck" data-radio="iradio_flat-green"> 普通初中&lt;/label&gt;
+                                        &lt;label&gt;&lt;input type="radio" name="radio2" checked class="icheck" data-radio="iradio_flat-green"&gt;普通高中&lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;div class="col-md-5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+&lt;!-- 替换内容end --&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#textarea-val1">
+                                                复制代码
+                                            </button>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 绑定事件的单选按钮 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form2">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">单选按钮</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-list" id="haveEventGroup1">
+                                                <label>
+                                                    <input type="radio" name="radio3" class="icheck"
+                                                           data-radio="iradio_flat-green" value="小学"> 小学</label>
+                                                <label>
+                                                    <input type="radio" name="radio3" checked class="icheck"
+                                                           data-radio="iradio_flat-green" value="小学教学点">小学教学点 </label>
+                                                <label>
+                                                    <input type="radio" name="radio3" class="icheck"
+                                                           data-radio="iradio_flat-green" value="附设教学班">附设教学班 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">单选按钮</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-inline" id="haveEventGroup2">
+                                                <label>
+                                                    <input type="radio" name="radio4" class="icheck"
+                                                           data-radio="iradio_flat-green" value="普通初中"> 普通初中</label>
+                                                <label>
+                                                    <input type="radio" name="radio4" checked class="icheck"
+                                                           data-radio="iradio_flat-green" value="普通高中">普通高中</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery"> 修改按钮组的选中状态+disabled </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form3">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-2">
+                                <button type="button" class="btn btn-success btn-block btn-sm" id="changeRadioCheck">
+                                    选中“小学”
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">单选按钮</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-list" id="haveEventGroup3">
+                                                <label>
+                                                    <input type="radio" name="radio3" class="icheck"
+                                                           data-radio="iradio_flat-green" value="小学"> 小学</label>
+                                                <label>
+                                                    <input type="radio" name="radio3" checked class="icheck"
+                                                           data-radio="iradio_flat-green" value="小学教学点">小学教学点 </label>
+                                                <label>
+                                                    <input type="radio" name="radio3" class="icheck"
+                                                           data-radio="iradio_flat-green" value="附设教学班">附设教学班 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery"> 自定义icheck的className </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form4">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">单选按钮</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-list">
+                                                <label>
+                                                    <input type="radio" name="radio4" class="myIcheck"
+                                                           data-radio="iradio_flat-green" value="小学"> 小学</label>
+                                                <label>
+                                                    <input type="radio" name="radio4" checked class="myIcheck"
+                                                           data-radio="iradio_flat-green" value="小学教学点">小学教学点 </label>
+                                                <label>
+                                                    <input type="radio" name="radio4" class="myIcheck"
+                                                           data-radio="iradio_flat-green" value="附设教学班">附设教学班 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,778 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 一般select</span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form1">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">select控件</label>
+                                    <div class="col-md-8">
+                                        <select class="bs-select ">
+                                            <option>直属（校办）</option>
+                                            <option>中外合作办</option>
+                                            <option>校企合办</option>
+                                            <option>民办</option>
+                                            <option>其他</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：select-1</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">select控件</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="select1" cols="30" rows="15">
+&lt;div class="row"&gt;
+    &lt;div class="col-md-7"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;select控件&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;select class="bs-select "&gt;
+                    &lt;option&gt;直属（校办）&lt;/option&gt;
+                    &lt;option&gt;中外合作办 &lt;/option&gt;
+                    &lt;option&gt;校企合办 &lt;/option&gt;
+                    &lt;option&gt;民办 &lt;/option&gt;
+                    &lt;option&gt;其他 &lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-5"&gt;&lt;/div&gt;
+&lt;/div&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#select1">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">不可用的select</label>
+                                    <div class="col-md-8">
+                                        <select class="bs-select " disabled>
+                                            <option>直属（校办）</option>
+                                            <option>中外合作办</option>
+                                            <option>校企合办</option>
+                                            <option>民办</option>
+                                            <option>其他</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：select-2</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">不可用的select</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="select2" cols="30" rows="15">
+&lt;div class="row"&gt;
+    &lt;div class="col-md-7"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;不可用的select&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;select class="bs-select " disabled&gt;
+                    &lt;option&gt;直属（校办）&lt;/option&gt;
+                    &lt;option&gt;中外合作办 &lt;/option&gt;
+                    &lt;option&gt;校企合办 &lt;/option&gt;
+                    &lt;option&gt;民办 &lt;/option&gt;
+                    &lt;option&gt;其他 &lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-5"&gt;&lt;/div&gt;
+&lt;/div&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#select2">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Extra Large Select</label>
+                                    <div class="col-md-8">
+                                        <select class="bs-select  input-xlarge">
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                            <option>Option 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-md-offset-2">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：select-3</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">Extra Large Select</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="select3" cols="30" rows="15">
+&lt;div class="row"&gt;
+    &lt;div class="col-md-7"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;Extra Large Select&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;select class="bs-select  input-xlarge"&gt;
+                    &lt;option&gt;Option 1&lt;/option&gt;
+                    &lt;option&gt;Option 2&lt;/option&gt;
+                    &lt;option&gt;Option 3&lt;/option&gt;
+                    &lt;option&gt;Option 4&lt;/option&gt;
+                    &lt;option&gt;Option 5&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-3 col-md-offset-2"&gt;&lt;/div&gt;
+&lt;/div&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#select3">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Large Select</label>
+                                    <div class="col-md-8">
+                                        <select class="bs-select  input-large">
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                            <option>Option 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：select-4</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">Large Select</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="select4" cols="30" rows="15">
+&lt;div class="row"&gt;
+    &lt;div class="col-md-7"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;Large Select&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;select class="bs-select  input-large"&gt;
+                    &lt;option&gt;Option 1&lt;/option&gt;
+                    &lt;option&gt;Option 2&lt;/option&gt;
+                    &lt;option&gt;Option 3&lt;/option&gt;
+                    &lt;option&gt;Option 4&lt;/option&gt;
+                    &lt;option&gt;Option 5&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-5"&gt;&lt;/div&gt;
+&lt;/div&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#select4">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Medium Select</label>
+                                    <div class="col-md-8">
+                                        <select class="bs-select  input-medium">
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                            <option>Option 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：select-5</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">Medium Select</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="select5" cols="30" rows="15">
+&lt;div class="row"&gt;
+    &lt;div class="col-md-7"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;Medium Select&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;select class="bs-select  input-medium"&gt;
+                    &lt;option&gt;Option 1&lt;/option&gt;
+                    &lt;option&gt;Option 2&lt;/option&gt;
+                    &lt;option&gt;Option 3&lt;/option&gt;
+                    &lt;option&gt;Option 4&lt;/option&gt;
+                    &lt;option&gt;Option 5&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-5"&gt;&lt;/div&gt;
+&lt;/div&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#select5">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Small Select</label>
+                                    <div class="col-md-8">
+                                        <select class="bs-select  input-small">
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                            <option>Option 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：select-6</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">Small Select</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="select6" cols="30" rows="15">
+&lt;div class="row"&gt;
+    &lt;div class="col-md-7"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;Small Select&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;select class="bs-select  input-small"&gt;
+                    &lt;option&gt;Option 1&lt;/option&gt;
+                    &lt;option&gt;Option 2&lt;/option&gt;
+                    &lt;option&gt;Option 3&lt;/option&gt;
+                    &lt;option&gt;Option 4&lt;/option&gt;
+                    &lt;option&gt;Option 5&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-5"&gt;&lt;/div&gt;
+&lt;/div&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#select6">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Extra Small Select</label>
+                                    <div class="col-md-8">
+                                        <select class="bs-select  input-xsmall">
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                            <option>Option 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：select-7</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">Extra Small Select</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="select7" cols="30" rows="15">
+&lt;div class="row"&gt;
+    &lt;div class="col-md-7"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;Extra Small Select&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;select class="bs-select  input-xsmall"&gt;
+                    &lt;option&gt;Option 1&lt;/option&gt;
+                    &lt;option&gt;Option 2&lt;/option&gt;
+                    &lt;option&gt;Option 3&lt;/option&gt;
+                    &lt;option&gt;Option 4&lt;/option&gt;
+                    &lt;option&gt;Option 5&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-5"&gt;&lt;/div&gt;
+&lt;/div&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#select7">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+
+
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> select使用 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form2">
+                    <div class="form-body">
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">绑定事件的select</label>
+                                    <div class="col-md-8">
+                                        <select class="bs-select " id="mySelect1">
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                            <option>Option 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：select-8</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">Extra Small Select</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="select8" cols="30" rows="15">
+&lt;div class="row"&gt;
+    &lt;div class="col-md-7"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;绑定事件的select&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;select class="bs-select " id="mySelect1"&gt;
+                    &lt;option&gt;Option 1&lt;/option&gt;
+                    &lt;option&gt;Option 2&lt;/option&gt;
+                    &lt;option&gt;Option 3&lt;/option&gt;
+                    &lt;option&gt;Option 4&lt;/option&gt;
+                    &lt;option&gt;Option 5&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-5"&gt;&lt;/div&gt;
+&lt;/div&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#select8">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">页面渲染后添加select选项</label>
+                                    <div class="col-md-8">
+                                        <select class="bs-select " id="mySelect2">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：select-9</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">Extra Small Select</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="select9" cols="30" rows="15">
+&lt;div class="row"&gt;
+    &lt;div class="col-md-7"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;页面渲染后添加select选项&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;select class="bs-select " id="mySelect2"&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-5"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#select9">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-12 ">select不可用+修改选中项 <span class="fa fa-long-arrow-down"></span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 ">
+                                        <button type="button" class="btn  btn-success  btn-sm"
+                                                id="changeSelect">选中“Option 3”
+                                        </button>
+                                    </label>
+                                    <div class="col-md-8">
+                                        <select class="bs-select " id="mySelect3" disabled>
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                            <option value="Option 4">Option 4</option>
+                                            <option value="Option 5">Option 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：select-10</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">Extra Small Select</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="select10" cols="30" rows="15">
+&lt;div class="row"&gt;
+    &lt;div class="col-md-7"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 "&gt;
+                &lt;button type="button" class="btn  btn-success  btn-sm"
+                        id="changeSelect"&gt;选中“Option 3”
+                &lt;/button&gt;
+            &lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;select class="bs-select " id="mySelect3" disabled&gt;
+                    &lt;option value="Option 1"&gt;Option 1&lt;/option&gt;
+                    &lt;option value="Option 2"&gt;Option 2&lt;/option&gt;
+                    &lt;option value="Option 3"&gt;Option 3&lt;/option&gt;
+                    &lt;option value="Option 4"&gt;Option 4&lt;/option&gt;
+                    &lt;option value="Option 5"&gt;Option 5&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-5"&gt;&lt;/div&gt;
+&lt;/div&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#select10">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">自定义select的className</label>
+                                    <div class="col-md-8">
+                                        <select class="mySelect " id="mySelect4">
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                            <option value="Option 4">Option 4</option>
+                                            <option value="Option 5">Option 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：select-11</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">Extra Small Select</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="select11" cols="30" rows="15">
+&lt;div class="row"&gt;
+    &lt;div class="col-md-7"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label class="col-md-4 control-label"&gt;自定义select的className&lt;/label&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;select class="mySelect " id="mySelect4"&gt;
+                    &lt;option value="Option 1"&gt;Option 1&lt;/option&gt;
+                    &lt;option value="Option 2"&gt;Option 2&lt;/option&gt;
+                    &lt;option value="Option 3"&gt;Option 3&lt;/option&gt;
+                    &lt;option value="Option 4"&gt;Option 4&lt;/option&gt;
+                    &lt;option value="Option 5"&gt;Option 5&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-5"&gt;&lt;/div&gt;
+&lt;/div&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#select11">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+    </div>
+</div>

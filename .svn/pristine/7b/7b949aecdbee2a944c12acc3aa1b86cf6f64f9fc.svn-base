@@ -1,0 +1,619 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase">  多选按钮注意事项--使用步骤 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <ol>
+                    <li>使用框架模版html／js等文件结构</li>
+                    <li>一组多选按钮的name必须相同</li>
+                    <li>查看在main文件内是否声引入icheck.js与是否初始化icheck</li>
+                    <li>请在模版javascript模版文件的 afterRender:function(){}方法中是否初始化多选控件</li>
+                    <li>例：
+                        <pre>
+ afterRender:function(){
+    var me=this;
+    <span class="code-notes">//如要初始化当前View中的全部多选按钮，使用下面的代码</span>
+    // BasePluginsUTIL.initCheck();
+    <span class="code-notes"> //如果要初始化某个范围内的多选按钮，请在form设置id</span>
+    BasePluginsUTIL.initCheck(me.$("#你的id名"));
+    <span class="code-notes">//初始化多选按钮事件，先绑定事件再初始化插件</span>
+    this.initCheckEvent();
+    <span class="code-notes">//先初始化icheck</span>
+    BasePluginsUTIL.initCheck(me.$("#form3"));
+    <span class="code-notes">//初始化某个范围内的所有input 的选择为不可点击</span>
+    $('#haveEventGroup3 input').iCheck('disable');
+    <span class="code-notes">//初始化自定义className的icheck</span>
+    BasePluginsUTIL.initCheck(me.$("#form4"),"myIcheck");
+ }</pre>
+                    </li>
+                    <li>
+                        结构
+                        <pre>
+&lt;form class="form-horizontal" id="form1"&gt;
+    &lt;div class="form-body"&gt;
+    <span class="code-notes">&lt;!-- 请在这里替换内容start --&gt;</span>
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-7"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label class="col-md-4 control-label"&gt;复选按钮 &lt;/label&gt;
+                    &lt;div class="col-md-8"&gt;
+                        &lt;div class="input-group"&gt;
+                            &lt;div class="icheck-list"&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"&gt; 学前教育
+                                &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green"&gt;
+                                    初等教育 &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"&gt; 中等教育
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    <span class="code-notes">&lt;!-- 请在这里替换内容 end --&gt;</span>
+    &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+                    </li>
+                    <li><p class="text-denger">注意form的ID不能重复请自行更改，初始化时请对应更改，谢谢！</p></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 一般复选按钮 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form1">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">复选按钮 </label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-list">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"> 学前教育 </label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green"> 初等教育 </label>
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"> 中等教育 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：checkBox-01</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">单选按钮</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="checkBox1" cols="30" rows="15">
+&lt;form class="form-horizontal" id="form1"&gt;
+    &lt;div class="form-body"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-7"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label class="col-md-4 control-label"&gt;复选按钮 &lt;/label&gt;
+                    &lt;div class="col-md-8"&gt;
+                        &lt;div class="input-group"&gt;
+                            &lt;div class="icheck-list"&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"&gt; 学前教育
+                                &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green"&gt;
+                                    初等教育 &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"&gt; 中等教育
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#checkBox1">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">复选按钮</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-inline">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green">幼儿园</label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green"> 附设幼儿班 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：checkBox-02</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">单选按钮</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="checkBox2" cols="30" rows="15">
+&lt;form class="form-horizontal" id="form1"&gt;
+    &lt;div class="form-body"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-7"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label class="col-md-4 control-label"&gt;复选按钮&lt;/label&gt;
+                    &lt;div class="col-md-8"&gt;
+                        &lt;div class="input-group"&gt;
+                            &lt;div class="icheck-inline"&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="icheck"
+                                           data-checkbox="icheckbox_flat-green"&gt;幼儿园&lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green"&gt;
+                                    附设幼儿班 &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#checkBox2">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+        <div class="portlet light  " >
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 绑定事件的复选按钮 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form2">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">复选按钮 </label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-list">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green" value="学前教育"> 学前教育 </label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green" value="初等教育"> 初等教育 </label>
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green" value="中等教育"> 中等教育 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：checkBox-03</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">单选按钮</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="checkBox3" cols="30" rows="15">
+&lt;form class="form-horizontal" id="form2"&gt;
+    &lt;div class="form-body"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-7"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label class="col-md-4 control-label"&gt;复选按钮 &lt;/label&gt;
+                    &lt;div class="col-md-8"&gt;
+                        &lt;div class="input-group"&gt;
+                            &lt;div class="icheck-list"&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"
+                                           value="学前教育"&gt; 学前教育 &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green"
+                                           value="初等教育"&gt; 初等教育 &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"
+                                           value="中等教育"&gt; 中等教育 &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#checkBox3">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">复选按钮</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-inline">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green" value="幼儿园">幼儿园</label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green" value="附设幼儿班"> 附设幼儿班 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：checkBox-04</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">单选按钮</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="checkBox4" cols="30" rows="15">
+&lt;form class="form-horizontal" id="form2"&gt;
+    &lt;div class="form-body"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-7"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label class="col-md-4 control-label"&gt;复选按钮&lt;/label&gt;
+                    &lt;div class="col-md-8"&gt;
+                        &lt;div class="input-group"&gt;
+                            &lt;div class="icheck-inline"&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"
+                                           value="幼儿园"&gt;幼儿园&lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green"
+                                           value="附设幼儿班"&gt; 附设幼儿班 &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#checkBox4">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+        <div class="portlet light  " >
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery"> 修改按钮组的选中状态+disabled </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form3">
+                    <div class="form-body">
+                    	<div class="row">
+                            <div class="col-md-offset-3 col-md-2">
+                            	<button type="button" class="btn btn-success  btn-sm" id="changeChecked">选中“学前教育”</button>
+                            </div>
+                       	</div>  
+                    	<div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">复选按钮</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-list" id="haveEventGroup3">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green" value="学前教育"> 学前教育 </label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green" value="初等教育"> 初等教育 </label>
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green" value="中等教育"> 中等教育 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：checkBox-05</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">单选按钮</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="checkBox5" cols="30" rows="15">
+&lt;form class="form-horizontal" id="form3"&gt;
+    &lt;div class="form-body"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-offset-3 col-md-2"&gt;
+                &lt;button type="button" class="btn btn-success  btn-sm" id="changeChecked"&gt;选中“学前教育”&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-7"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label class="col-md-4 control-label"&gt;复选按钮&lt;/label&gt;
+                    &lt;div class="col-md-8"&gt;
+                        &lt;div class="input-group"&gt;
+                            &lt;div class="icheck-list" id="haveEventGroup3"&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"
+                                           value="学前教育"&gt; 学前教育 &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green"
+                                           value="初等教育"&gt; 初等教育 &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"
+                                           value="中等教育"&gt; 中等教育 &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#checkBox5">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+		<div class="portlet light  " >
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery"> 自定义icheck的className </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form4">
+                    <div class="form-body"> 
+                    	<div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">复选按钮</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="icheck-list">
+                                                <label>
+                                                    <input type="checkbox" class="myIcheck" data-checkbox="icheckbox_flat-green" value="学前教育"> 学前教育 </label>
+                                                <label>
+                                                    <input type="checkbox" checked class="myIcheck" data-checkbox="icheckbox_flat-green" value="初等教育"> 初等教育 </label>
+                                                <label>
+                                                    <input type="checkbox" class="myIcheck" data-checkbox="icheckbox_flat-green" value="中等教育"> 中等教育 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 start-->
+                                <div class="sampleHtml">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-success  btn-sm shootLayer">示例代码</a>
+                                            <label class="control-label">编号：checkBox-06</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade confirm" tabindex="-1" data-backdrop="static"
+                                         data-keyboard="false">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true"></button>
+                                            <h4 class="modal-title">单选按钮</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="exampleCode">
+                                    <textarea name="" id="checkBox6" cols="30" rows="15">
+&lt;form class="form-horizontal" id="form4"&gt;
+    &lt;div class="form-body"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-7"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label class="col-md-4 control-label"&gt;复选按钮&lt;/label&gt;
+                    &lt;div class="col-md-8"&gt;
+                        &lt;div class="input-group"&gt;
+                            &lt;div class="icheck-list"&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="myIcheck" data-checkbox="icheckbox_flat-green" value="学前教育"&gt; 学前教育 &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" checked class="myIcheck" data-checkbox="icheckbox_flat-green" value="初等教育"&gt; 初等教育 &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" class="myIcheck" data-checkbox="icheckbox_flat-green" value="中等教育"&gt; 中等教育 &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" data-dismiss="modal" class="btn btn-default ">关闭
+                                            </button>
+                                            <button class="copyHtml btn blue" data-clipboard-target="#checkBox6">
+                                                复制代码
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹出页面代码实例，如需复制这个地方i请删除 end-->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+    </div>
+</div>

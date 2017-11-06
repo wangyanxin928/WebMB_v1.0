@@ -1,0 +1,198 @@
+<!--author:w王燕欣-->
+<!--createDate: 2017/07/14-->
+<!--description: 基础组件——增加模块-->
+<style>
+    /* 隐藏作为模板的内容块 */
+    #moduleContent{
+        display: none;
+    }
+</style>
+<!-- BEGIN ROW -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="full-height-content full-height-content-scrollable">
+            <div class="full-height-content-body">
+                <div class="portlet light  ">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <!--<i class="icon-puzzle font-grey-gallery"></i>-->
+                            <span class="caption-subject bold font-grey-gallery uppercase"> 添加数据模块 </span>
+                        </div>
+                        <div class="tools">
+                            <span class="caption-helper"><a> </a></span>
+                            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                        </div>
+                    </div>
+
+                    <div class="portlet-body form">
+
+                        <!-- BEGIN FORM-->
+                        <form action="#" class="form-horizontal">
+                            <div class="form-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="portlet-body">
+                                            <div class="row">
+                                                <div class="col-md-12 text-center">
+                                                    <form class="form-inline">
+                                                        <a class="btn btn-outline green-haze" id="addModule">添加</a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- END FORM-->
+                        <div id="moduleListWrapper">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 	</div>
+ </div>
+<!-- END ROW -->
+
+<div id="confirm" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="modal-body">
+        <h4 class="modal-title">确认删除此数据?</h4>
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-default" id="noCheck">取消</button>
+        <button type="button" data-dismiss="modal" class="btn btn-success" id="yesCheck">确定</button>
+    </div>
+</div>
+
+
+<div class="portlet light bordered" id="moduleContent">
+    <div class="portlet-title">
+        <div class="caption">
+            <!--<i class="icon-puzzle font-grey-gallery"></i>-->
+            <span class="caption-subject bold font-grey-gallery uppercase"> 内容块标题 </span>
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a> </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+        <div class="actions">
+            <a href="javascript:;" class="btn btn-success btn-sm addModule"> <i class="fa fa-plus"></i> 复制 </a>
+            <a href="javascript:;" class="btn default btn-sm removeModule"> <i class="fa fa-remove"></i> 删除 </a>
+        </div>
+    </div>
+    <div class="portlet-body form ">
+        <div class="full-height-content-body">
+            <!-- BEGIN FORM-->
+            <form action="#" class="form-horizontal" id="myForm1">
+                <div class="form-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">学号</label>
+
+                                <div class="col-md-9">
+                                    <input dataKey="XH" type="text" class="form-control "
+                                           placeholder="如:22022（必填项）" id="XH" name="XH">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">姓名</label>
+
+                                <div class="col-md-9">
+                                    <input dataKey="XM" type="text" class="form-control "
+                                           placeholder="如:李老大（必填项）" id="XM" name="XM">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">性别</label>
+
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <div class="icheck-inline" id="XBM">
+                                            <label>
+                                                <input type="radio" name="XBM" checked class="icheck" data-radio="iradio_flat-green" value="1" > 男</label>
+                                            <label>
+                                                <input type="radio" name="XBM" class="icheck"
+                                                       data-radio="iradio_flat-green" value="2"> 女 </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">出生日期</label>
+
+                                <div class="col-md-9">
+                                    <div class="input-group input-medium date date-picker"
+                                         data-date-format="yyyy-mm-dd">
+                                        <input dataKey="CSRQ" id="CSRQ" name="CSRQ" type="text"
+                                               class="form-control" readonly>
+					                                <span class="input-group-btn">
+					                                <button class="btn btn-success" type="button"><i
+                                                            class="fa fa-calendar"></i></button>
+					                                </span>
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">籍贯</label>
+
+                                <div class="col-md-9">
+                                    <input dataKey="JG" type="text" class="form-control "
+                                           placeholder="如:绵阳市酒仙桥路20号（必填项）" id="JG" name="JG" value="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="row text-center">
+                                    <div class="col-md-12">
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <a class="btn btn-success btnSaveData" >保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- END FORM-->
+        </div>
+    </div>
+</div>

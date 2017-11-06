@@ -1,0 +1,313 @@
+<!--文本框+lable  start-->
+<div class="portlet light  ">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold font-grey-gallery uppercase">欢迎使用fairmind前端模版</span>
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a>   </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <ol>
+            <li>请在 <a>fairmind开发者社区</a> 下载我们的基础开发包如果已经 <a href="">下载</a>，请跳过此步骤</li>
+            <li>现在请用WebStorm软件打开我们预先整理好的前端框架包</li>
+            <li>前端框架包目录如下
+                <pre><span class="fa fa-minus-square-o"></span><span class="fa fa-folder-open-o"></span>&nbsp;view <span class="code-notes">这个是后台框架中目录文件名我们需要把前端文件包解压后放在此文件下</span>
+    <span class="fa fa-minus-square-o"></span><span class="fa fa-folder-open-o"></span>&nbsp;newPorject <span class="code-notes">项目工程名</span>
+        <span class="fa fa-minus-square-o"></span><span class="fa fa-folder-open-o"></span>&nbsp;basePlugins <span class="code-notes">项目私有文件夹</span>
+            <span class="fa fa-minus-square-o"></span><span class="fa fa-folder-open-o"></span>&nbsp;js <span class="code-notes">项目js文件夹</span>
+                <span class="fa fa-minus-square-o"></span><span class="fa fa-folder-open-o"></span>&nbsp;common <span class="code-notes">项目主体文件夹</span>
+                    <span class="fa fa-file-code-o"></span>&nbsp;ajax.js <span class="code-notes">项目数据异步加载方法文件</span><span class="text-danger">如有改动请与有关人员确认</span>
+                    <span class="fa fa-file-code-o"></span>&nbsp;router.js <span class="code-notes">项目路由文件</span><span class="text-danger">在添加html／js文件的时候请在此文件内添加相应方法内容请看dome1</span>
+                    <span class="fa fa-file-code-o"></span>&nbsp;util.js <span class="code-notes">公共控制模型绑定窗口文件</span><span class="text-danger">如有改动请与有关人员确认</span>
+                <span class="fa fa-minus-square-o"></span><span class="fa fa-folder-open-o"></span>&nbsp;pages <span class="code-notes">html配置文件夹</span><span class="text-danger"> 文件夹内js与html一一对应</span>
+                    <span class="fa fa-file-code-o"></span>&nbsp;baseDome.js <span class="code-notes">baseDome空示例模版如添加新html文件请复制此文件</span><span class="text-danger"> 此文件js一一对应同时增加</span>
+                <span class="fa fa-file-code-o"></span>&nbsp;main <span class="code-notes">引入插件文件</span> <span class="text-danger">如有增减请与有关人员确认</span>
+            <span class="fa fa-minus-square-o"></span><span class="fa fa-folder-open-o"></span>&nbsp;tpl<span class="code-notes">项目html文件夹</span>
+                    <span class="fa fa-file-code-o"></span>&nbsp;baseDome.html <span class="code-notes">baseDome.html为空示例模版如添加新html文件请复制此文件并在pages文件夹内创建相应的js文件</span>
+                        <span class="text-danger"><span class="fa fa-long-arrow-up"></span> 此文件应与pages文件夹内的js文件一一对应同时增加，名字一致</span>
+            <span class="fa fa-minus-square-o"></span><span class="fa fa-file-code-o"></span>&nbsp;index.html <span class="code-notes">项目起始页</span>
+        <span class="fa fa-minus-square-o"></span><span class="fa fa-folder-open-o"></span>&nbsp;css <span class="code-notes">CSS文件夹</span>
+        <span class="fa fa-minus-square-o"></span><span class="fa fa-folder-open-o"></span>&nbsp;images <span class="code-notes">私有图片文件夹可自行增减／注意图片大小</span>
+        <span class="fa fa-minus-square-o"></span><span class="fa fa-folder-open-o"></span>&nbsp;img <span class="text-danger">公有图片文件夹内容不可删除</span>
+        <span class="fa fa-minus-square-o"></span><span class="fa fa-folder-open-o"></span>&nbsp;js <span class="text-danger">公有依赖js文件夹内容不可删除</span></pre>
+            </li>
+        </ol>
+    </div>
+</div>
+<!--文本框+lable end-->
+<!--不同大小的输入框  start-->
+<div class="portlet light  ">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold font-grey-gallery uppercase">项目内新建文件步骤 </span>
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a>   </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <ol>
+            <li>在newPorject --&gt;&nbsp;basePlugins --&gt;&nbsp;<span class="code-notes"> tpl</span>文件内新建 <span class="code-notes">yourFileName.html</span>&nbsp;这个是你命名的.html文件
+                <p>html文件需要在头部给出签名，标明责任人，及当前html模块描述；如：</p>
+                <pre><span class="code-notes">&lt;!-- ============================================================
+//  author: <span class="text-danger">责任人姓名</span>
+//  createDate: 2016/09/06 <span class="text-danger">创建时间</span>
+//  description: 基础组件——dataTable小列表 <span class="text-danger">模块简单描述</span>
+//  =========================================================== --&gt;</span>
+
+&lt;div class="row"&gt;
+    &lt;div class="col-md-12 col-lg-12 "&gt;
+        &lt;!--这里是要您书写内容块-- &gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            </li>
+            <li>在newPorject --&gt;&nbsp;basePlugins --&gt;&nbsp; js文件 --&gt;&nbsp;<span class="code-notes">pages</span>文件内新建 <span class="code-notes">yourFileName.js</span>这个是你命名的.js文件
+                <p class="text-danger">注意：此文件是与tpl文件中的html文件一一对应关系</p>
+                <p>js文件需要在头部给出签名，标明责任人，及当前html模块描述；如：</p>
+<pre>
+<span class="code-notes">// ============================================================
+//  author: <span class="text-danger">责任人姓名</span>
+//  createDate: 2016/09/06 <span class="text-danger">创建时间</span>
+//  description: 基础组件——dataTable小列表 <span class="text-danger">模块简单描述</span>
+//  ===========================================================
+</span>
+define(function (require) {
+    "use strict"; <span class="text-danger">//用严格模式</span>
+    var tpl = require('text!tpl/yourFileName.html'), <span class="code-notes">//对应的html文件 <span class="text-danger">名称:yourFileName</span>请写正确</span>
+        template = _.template(tpl), <span class="code-notes">//视窗模块赋值 <span class="text-danger">请勿改动</span></span>
+        _this; <span class="code-notes">//声明变量  <span class="text-danger">请勿改动</span></span>
+    var Cropper = require('cropper');  <span class="code-notes">//这个方法是在main.js中没有 <span class="text-danger">初始此化组件依赖</span>&nbsp;在此初始化</span>
+        <span class="code-notes">//<span class="fa fa-long-arrow-up"></span>此组件不是公共组件，只在此模块下使用的组件，<span class="text-danger">初始化前请查看main.js文件内是否有引入！如没有引入请与相关人员进行确认！</span></span>
+    return Backbone.View.extend({ <span class="code-notes">//返回到试图窗口 <span class="text-danger">这里是固定的请勿改动</span></span>
+        className: "",<span class="code-notes">//这里是添加到框架内部的内容第一层 如果不写className的值会增加一层空的div <span class="text-danger">此className值一般为空！</span></span>
+        initialize: function () { <span class="code-notes">//初始化方法 <span class="text-danger">此方法为必要方法不可更改</span></span>
+            _this = this; <span class="code-notes">//上面的声明的_this赋值 this <span class="text-danger">不可更改</span></span>
+            this.render(); <span class="code-notes">//调用下面的render()方法<span class="text-danger">不可更改</span></span>
+        },
+        render: function () { <span class="code-notes">//初始化方法在上面已经调用此方法 <span class="text-danger">不可更改</span></span>
+            this.$el.html(template(this.model));
+            return this;
+        },
+        afterRender: function () { <span class="code-notes">//各个业务页视图js中统一在render后面添加afterRender；afterRender中写入页面render之后需要执行的代码；</span>
+            <span class="text-danger">//如：</span><span class="code-notes">加载datatable中数据</span>
+            this.initDataTableData();
+            <span class="code-notes">//初始化删除数据弹层</span>
+            this.initDeleteModal();
+            <span class="code-notes">//待删除的id</span>
+            this.needDeleteId="";
+            <span class="code-notes">//编辑的主键id,编辑和详情</span>
+            this.editID="";
+        },
+        events: { <span class="code-notes">//这里是点击事件集合书写方法如下：</span>
+              "click #fileUpload":"youMethodName", <span class="code-notes">//点击事件的书写方式 <span class="text-danger">下面有对应的方法进行响应！</span></span>
+     <span class="code-notes">//触发方法方式<span class="fa fa-long-arrow-up"></span></span> <span class="code-notes">触发元素<span class="fa fa-long-arrow-up"></span></span>         <span class="code-notes"><span class="fa fa-long-arrow-up"></span>触发方法名称 <span class="text-danger">需要与下面的方法名相同</span></span>
+        },
+        youMethodName:function(e){
+           <span class="code-notes">//<span class="fa fa-long-arrow-up"></span>调用方法的方法名一致 </span>
+
+        }
+    });
+});
+</pre>
+            </li>
+            <li>找到 <span class="code-notes">common</span>文件夹 --></span></span>内的 <span class="code-notes">router.js</span>文件打开
+                <p >现在我们来配置文件的路由！</p>
+<pre>
+<span class="code-notes">// ============================================================
+//  author: <span class="text-danger">责任人姓名</span>
+//  createDate: 2016/09/06 <span class="text-danger">创建时间</span>
+//  description: 基础组件——dataTable小列表 <span class="text-danger">模块简单描述</span>
+//  ===========================================================</span>
+define(function (require) {
+    "use strict";
+    return Backbone.Router.extend({
+        routes: {
+            "": "baseDome", <span class="code-notes">//此方法是url为空或#的时候访问的页面路由需要添加响应的路由</span>
+    <span class="text-danger">//注意书写的时候为避免多人配合使用此公共方法请书写如下start与end 并且写上模块注释</span>
+            <span class="code-notes">//如：张三 start</span>
+            /*wyx-添加yourFileName示例 */
+            "yourFileName":"yourFileName", <span class="text-danger">//请与下面响应方法名称对应</span>
+    <span class="text-danger">注意：两个调用方法要用小写的<span class="code-notes">&nbsp;,&nbsp;</span>分开；</span>
+            <span class="code-notes">//如：张三 end</span>
+        },
+    <span class="text-danger">//此方法为封装方法请勿改动 start</span>
+        goIndex: function (requirePath, operationType, currentId, jsonObject) {
+            require([requirePath], function (view) {
+                BasePluginsUTIL.initMenu();//根据当前路由修改菜单选中样式
+                var viewObj = {model: {_opType: operationType, _currentId: currentId, _jsonObject: jsonObject}};
+                var _view = new view(viewObj);
+                $('.page-content-wrapper').html(_view.$el);
+                Layout.initContent();
+                //设置中间内容区域屏幕的高度,中间内容区域层的class必须是page-content
+                _view.afterRender();
+            });
+        },
+    <span class="text-danger">//此方法为封装方法请勿改动 end</span>
+        <span class="code-notes"> /*wyx-添加yourFileName示例 */</span>
+        yourFileName: function () {
+          <span class="text-danger">//<span class="fa fa-long-arrow-up"></span>请与上面触发方法名称对应</span>
+            this.goIndex("pages/basePlugins/yourFileName");
+                                              <span class="text-danger">//<span class="fa fa-long-arrow-up"></span>请与对应js文件名称对应</span>
+        },
+    })
+});
+</pre>
+            </li>
+            <li>找到项目中的<span class="code-notes">index.html</span>
+                <ol>
+                    <li>此页面包含头部信息，左侧导航区域、右侧内容区域、底部区域</li>
+                    <li> <div>现在配置路由打开 <span class="code-notes">index.html</span>页面</div></li>
+                    <li><span class="text-danger">注意：<span class="text-danger">因为index.html为公共增改页面请勿随意更改其它代码！</span></span>找到对应的列表位置进行增加；</li>
+                    <li><span class="text-danger">路由的设置更改a标签的href="html文件名字不要(.html)</span></li>
+                    <li><span class="text-danger">a的'href'不能为空，如果为空则默认返回主页</span></li>
+                </ol>
+<pre>
+    <span class="code-notes">&lt;!-- 开始  侧边栏 --&gt;</span>
+    &lt;div class="page-sidebar-wrapper "&gt;
+        <span class="code-notes">&lt;!-- 开始  侧边栏 --&gt;</span>
+        &lt;div class="page-sidebar navbar-collapse collapse "&gt;
+            <span class="code-notes">&lt;!-- 开始  的侧边栏菜单 --&gt;</span>
+            &lt;ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200"&gt;
+                &lt;li class="nav-item start "&gt;
+                    &lt;a href="javascript:;" class="nav-link "&gt;
+                        &lt;i class="icon-home"&gt;&lt;/i&gt;
+                        &lt;span class="title"&gt;模块分块&lt;/span&gt;
+                        &lt;span class="arrow "&gt;&lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;ul class="sub-menu"&gt;
+                        &lt;li class="nav-item start"&gt;
+                            <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                            <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                            &lt;a href="#instructions" class="nav-link nav-toggle "&gt;
+                                &lt;i class="fa fa-send-o"&gt;&lt;/i&gt;
+                                &lt;span class="title"&gt;说明书&lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class="nav-item "&gt;
+                            <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                            <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                            &lt;a href="#baseDome" class="nav-link nav-toggle "&gt;
+                                &lt;i class="fa fa-send-o"&gt;&lt;/i&gt;
+                                &lt;span class="title"&gt;概览&lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class="heading"&gt;
+                    &lt;h3 class="uppercase"&gt;顶级标题&lt;/h3&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item "&gt;
+                    &lt;a href="javascript:;" class="nav-link "&gt;
+                        &lt;i class="icon-folder"&gt;&lt;/i&gt;
+                        &lt;span class="title"&gt;多级菜单&lt;/span&gt;
+                        &lt;span class="arrow "&gt;&lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;ul class="sub-menu"&gt;
+                        &lt;li class="nav-item"&gt;
+                            &lt;a href="javascript:;" class="nav-link "&gt;
+                                &lt;i class="icon-settings"&gt;&lt;/i&gt;二级菜单
+                                &lt;span class="arrow"&gt;&lt;/span&gt;
+                            &lt;/a&gt;
+                            &lt;ul class="sub-menu"&gt;
+                                &lt;li class="nav-item"&gt;
+                                    <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                                    <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                                    &lt;a href="javascript:;" target="_blank" class="nav-link "&gt;
+                                        &lt;i class="icon-user"&gt;&lt;/i&gt;三级菜单1
+                                        &lt;span class="arrow "&gt;&lt;/span&gt;
+                                    &lt;/a&gt;
+                                    &lt;ul class="sub-menu"&gt;
+                                        &lt;li class="nav-item"&gt;
+                                            <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                                            <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                                            &lt;a href="#" class="nav-link nav-toggle"&gt;
+                                                &lt;i class="icon-power"&gt;&lt;/i&gt;四级菜单&lt;/a&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class="nav-item"&gt;
+                                            <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                                            <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                                            &lt;a href="#" class="nav-link nav-toggle"&gt;
+                                                &lt;i class="icon-paper-plane"&gt;&lt;/i&gt;四级菜单&lt;/a&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class="nav-item"&gt;
+                                            <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                                            <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                                            &lt;a href="#" class="nav-link nav-toggle"&gt;
+                                                &lt;i class="icon-star"&gt;&lt;/i&gt;四级菜单&lt;/a&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li class="nav-item"&gt;
+                                    <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                                    <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                                    &lt;a href="#" class="nav-link nav-toggle"&gt;
+                                        &lt;i class="icon-camera"&gt;&lt;/i&gt;三级菜单2&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li class="nav-item"&gt;
+                                    <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                                    <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                                    &lt;a href="#" class="nav-link nav-toggle"&gt;
+                                        &lt;i class="icon-link"&gt;&lt;/i&gt;三级菜单3&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li class="nav-item"&gt;
+                                    <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                                    <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                                    &lt;a href="#" class="nav-link nav-toggle"&gt;
+                                        &lt;i class="icon-pointer"&gt;&lt;/i&gt;三级菜单4&lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li class="nav-item"&gt;
+                            &lt;a href="?p=dashboard-2" target="_blank" class="nav-link "&gt;
+                                &lt;i class="icon-globe"&gt;&lt;/i&gt;二级菜单1
+                                &lt;span class="arrow "&gt;&lt;/span&gt;
+                            &lt;/a&gt;
+                            &lt;ul class="sub-menu"&gt;
+                                &lt;li class="nav-item"&gt;
+                                    <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                                    <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                                    &lt;a href="#" class="nav-link nav-toggle"&gt;
+                                        &lt;i class="icon-tag"&gt;&lt;/i&gt;三级菜单1&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li class="nav-item"&gt;
+                                    <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                                    <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                                    &lt;a href="#" class="nav-link nav-toggle"&gt;
+                                        &lt;i class="icon-pencil"&gt;&lt;/i&gt;三级菜单2&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li class="nav-item"&gt;
+                                    <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                                    <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                                    &lt;a href="#" class="nav-link nav-toggle"&gt;
+                                        &lt;i class="icon-graph"&gt;&lt;/i&gt;三级菜单3&lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li class="nav-item"&gt;
+                            <span class="code-notes">&lt;!-- 路由的设置更改a标签的href="html文件名字不要(.html)" --&gt;</span>
+                            <span class="code-notes">&lt;!-- a的'href'不能为空，如果为空则默认返回主页 --&gt;</span>
+                            &lt;a href="#" class="nav-link nav-toggle"&gt;
+                                &lt;i class="icon-bar-chart"&gt;&lt;/i&gt;二级菜单2&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            <span class="code-notes">&lt;!-- 结束  的侧边栏菜单 --&gt;</span>
+        &lt;/div&gt;
+        <span class="code-notes">&lt;!-- 结束  侧边栏 --&gt;</span>
+    &lt;/div&gt;
+    <span class="code-notes">&lt;!-- 结束  侧边栏 --&gt;</span>
+</pre>
+
+            </li>
+        </ol>
+        <!-- END FORM-->
+    </div>
+</div>
+
