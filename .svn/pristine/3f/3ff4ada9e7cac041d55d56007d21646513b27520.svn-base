@@ -1,0 +1,37 @@
+<!--baseEditors-->
+<!--超级文本编辑器  start-->
+<div class="portlet light  ">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold font-grey-gallery uppercase"> 文本框+lable </span>
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a>   </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <form class="form-horizontal form-bordered">
+            <div class="form-body">
+                <div class="form-group last">
+                    <label class="control-label col-md-2">Default Editor</label>
+                    <div class="col-md-10">
+                        <div name="summernote" id="summernote_1"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn green">
+                            <i class="fa fa-check"></i> Submit</button>
+                        <button type="button" class="btn default">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- END FORM-->
+    </div>
+</div>
+<!--超级文本编辑器  end-->
