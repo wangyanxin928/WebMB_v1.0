@@ -1,0 +1,75 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase">tab切换标签--内容区域框(div <code>.tabbable-custom </code>)</span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a></a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Begin: life time stats -->
+                        <div class="portlet light portlet-fit portlet-datatable bordered">
+                            <div class="portlet-body">
+                                <div class="tabbable-custom ">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#tab_4_1" data-toggle="tab" id="canvas0">tab1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_4_2" data-toggle="tab" id="canvas1"> tab2 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_4_3" data-toggle="tab" id="canvas2">tab3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_4_4" data-toggle="tab" id="canvas3">tab4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_4_5" data-toggle="tab" id="canvas4">tab5</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab_4_1">
+                                            <h4>tab1的内容</h4>
+                                            <div id="dataTableWrapper" style="margin-top: 16px; height: 500px;"></div>
+
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_2">
+                                            <h4>tab2的内容</h4>
+                                            <div id="dataTableWrapper1" style="margin-top: 16px; height: 500px;"></div>
+
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_3">
+                                            <h4>tab3的内容</h4>
+                                            <div id="dataTableWrapper2" style="margin-top: 16px; height: 500px;"></div>
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_4">
+                                            <h4>tab3的内容</h4>
+                                            <div id="dataTableWrapper3" style="margin-top: 16px; height: 500px;"></div>
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_5">
+                                            <h4>tab3的内容</h4>
+                                            <div id="dataTableWrapper4" style="margin-top: 16px; height: 500px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End: life time stats -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- END FORM-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

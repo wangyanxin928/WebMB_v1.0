@@ -1,0 +1,66 @@
+<style>
+    iframe{width: 100%;height: 100%;min-height: 800px;}
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <!--<div class="portlet-title">-->
+                <!--<div class="caption">-->
+                <!--</div>-->
+                <!--<div class="tools">-->
+                    <!--<span class="caption-helper"><a></a></span>-->
+                    <!--<a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Begin: life time stats -->
+                        <div class="portlet portlet-fit portlet-datatable ">
+                            <div class="portlet-body">
+                                <div class="tabbable-custom ">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#tab_4_1" data-toggle="tab" id="canvas0">loginOne</a></li>
+                                        <li><a href="#tab_4_2" data-toggle="tab" > loginTwo </a></li>
+                                        <li><a href="#tab_4_3" data-toggle="tab" >loginThree</a></li>
+                                        <li><a href="#tab_4_4" data-toggle="tab" >loginFour</a></li>
+                                        <li><a href="#tab_4_5" data-toggle="tab" >loginFive</a></li>
+                                        <li><a href="#tab_N" data-toggle="tab" ><span class="text-denger">适用注意事项</span></a></li>
+
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab_4_1">
+                                            <iframe src="tpl/basePlugins/baseLoginPage/loginPage/html/login1.html" frameborder="0"></iframe>
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_2">
+
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_3">
+
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_4">
+
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_5">
+
+                                        </div>
+                                        <div class="tab-pane" id="tab_N">
+                                            <span class="caption-subject bold font-grey-gallery uppercase">登陆页面为成套，适用于pc端/移动端/使用请复制对应的JavaScript/css/html  <span class="text-denger">相对路径</span></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End: life time stats -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- END FORM-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

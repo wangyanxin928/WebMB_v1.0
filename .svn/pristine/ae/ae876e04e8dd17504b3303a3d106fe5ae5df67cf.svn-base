@@ -41,9 +41,6 @@ define(function (require) {
             "overviewTwo":"overviewTwo",
             "overviewThree":"overviewThree",
 
-            /*wyx-添加 登陆baseLoginPage   start*/
-            "baseLoginPageIndex":"baseLoginPageIndex",
-            /*wyx-添加 登陆baseLoginPage   end*/
 
             "baseDataTableNew":"baseDataTableNew",
             /*wyx star*/
@@ -144,10 +141,7 @@ define(function (require) {
             this.goIndex("pages/overview/overviewThree");
         },
 
-        //基础组件--综合登陆页
-        baseLoginPageIndex: function () {
-            this.goIndex("pages/basePlugins/baseLoginPageIndex");
-        },
+
 
         /* 最早的组件页实例 */
         putong_content:function(){

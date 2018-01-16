@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*背景轮播图 start*/
+#bodyPage{ width:100%; min-height:100%; height:auto !important; height:100%; position:fixed; top:0; left:0; }
+#bodyBox #bodyPage img.bg { position:absolute; top: 0px; left: 0px; z-index:1; display:none;}
+/*背景轮播图 end*/
+/*去除原有样式 start*/
+input[type="button"], input[type="submit"], input[type="reset"],input {  -webkit-appearance: none;  }
+select{appearance:none;  -moz-appearance:none;  -webkit-appearance:none;}
+input[type="text"]:focus{
+    border:1px solid #01b28f;
+}
+/*去除原有样式end*/
+#nav{display: block;width: 100%;  height: 32px; background-color: #ffffff;opacity: 0.6;position: relative;top: 0px;left: 0px;z-index: 99999999;}
+#nav .data-nav{height: 32px;z-index: 10;margin: auto;opacity: 1!important;}
+#nav .data-nav .nav{text-align: right; float: right;line-height: 32px;margin-right: 5%;}
+#nav .data-nav .nav a{color: #333;    display: inline-block;  height: 32px;  line-height: 32px;  padding: 0 15px;font-weight: 900;}
+#nav .data-nav .nav a:hover{color: #4fc3ba; text-decoration: none;}
+
+.data-form-box{padding: 10px 15px;}
+.data-row{padding-bottom: 15px;clear: both;}
+.data-input-inline{width: 220px; float: none; vertical-align: middle;margin-left: 10px;}
+.data-input{padding-left: 30px;display: block;  width: 100%;height: 30px;  line-height: 30px;    border: 1px solid #e6e6e6;    border-radius: 2px;cursor: pointer;}
+.clear-input{    display: inline-block;  padding: 0 10px;  height: 36px;  font-size: 13px;  line-height: 1;
+    color: #777;  background: #FCFCFC;  border: 1px solid #CCC;  border-radius: 3px;  box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+    -webkit-transition: color .2s linear,border-color .3s linear;  box-sizing: border-box;  width: 100%;}
+.data-btn-danger{background-color: #ff5722;border-radius: 4px;line-height: 36px;height: 36px;color: #ffffff;text-align: center;font-size: 14px;padding:0 15px;cursor: pointer;font-weight: 300; display: inline-block;}
+.data-btn-disabled{background-color: #FBFBFB;border-radius: 4px;line-height: 36px;height: 36px;color: #C9C9C9;text-align: center;font-size: 14px;padding:0 15px;font-weight: 300;border:1px solid #e6e6e6;cursor: not-allowed; display: inline-block; outline: none;}
+.data-btn-star{background-color: #00B290;border-radius: 4px;line-height: 36px;height: 36px;color: #ffffff;text-align: center;font-size: 14px;padding:0 15px;font-weight: 300;border:1px solid #00B290;cursor: pointer;display: inline-block; outline: none;}
+.data-btn-star:hover{background-color: #009075;}
+.data-btn-resend{background-color: #FCFCFC;border-radius: 4px;line-height: 36px;height: 36px;color: #666666;text-align: center;font-size: 14px;width: 100px;font-weight: 300;border:1px solid #ccc;cursor: pointer;display: inline-block; outline: none; float: right;}
+
+.landingMailText{color: #9e9e9e;width: 90%;margin: auto;text-align: left;}
+
+.data-inline270{width: 270px;display: inline-block;}
+.data-inline300{width: 300px;display: inline-block;}
+.data-col-250{width: 250px;}
+
+.tal{text-align: left;}
+.fl{float: left;}
+.fr{float: right;}
+.cb{clear: both;}
+
+.text-Blue{color: #05b8ff;}
+.t9e{color: #9e9e9e;}
+.t333{color: #333333;}
+.tGreenBtn{color: #00B290;cursor: pointer;}
+.t999Btn{color: #999;cursor: pointer;}
+.tDanger{color: #ff5722}
+
+.mailPromptText{color: #009075;line-height: 30px;}
+.countDown{border: 0px;background-color: #ffffff; color: #999999;display: inline-block;width: 80px;text-align: left;}
+
+
+/*邮箱验证*/
+.verification{position: relative;}
+.verificationBox{width: 300px;height: 36px;line-height: 36px;border-radius: 2px;text-align: center; background-color: #e8e8e8;position: relative;}
+.moveBlock{width: 34px;height: 34px;line-height: 34px;display: inline-block;border: 1px solid #ccc;text-align: center;background-color: #ffffff;position: absolute;top: 0px;left: 0px;z-index: 20;}
+.scale_text{width: 100%;  height: 100%;  text-align: center;  position: relative;  z-index: 8;  background: transparent;  color: #9c9c9c;  line-height: 34px;  font-size: 12px;  cursor: pointer; }
+.scale_text{ background-image: -webkit-linear-gradient(left,#D81159, #E53A40 10%, #bd7f0d 20%, #587930 30%, #30A9DE 40%,#D81159 50%, #E53A40 60%, #FFBC42 70%, #75D701 80%, #30A9DE 90%,#D81159);
+    color:transparent;  -webkit-background-clip: text;  background-size: 200%;  transform: translate(0,20px);  animation: flowlight 3s linear infinite;
+    -webkit-background-clip: text;  -webkit-text-fill-color: transparent;  -webkit-animation: slidetounlock 3s infinite;  -webkit-text-size-adjust: none;  width: 100%;
+}
+.verificationBg{position: absolute;height: 100%;background-color: #00B290;z-index: 5;}
+.waring{display: inline-block;width:20px;height: 20px;border: 1px solid #00B290;border-radius: 20px;background-color: #00B290; font-size: 16px;text-align: center;line-height: 20px;margin-top: 7px;color: #ffffff;}
+
+/*手机验证*/
+.verificationCode{    display: inline-block;  padding: 0 10px;  height: 36px;  font-size: 13px;  line-height: 1;
+    color: #777;  background: #FCFCFC;  border: 1px solid #CCC;  border-radius: 3px;  box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+    -webkit-transition: color .2s linear,border-color .3s linear;  box-sizing: border-box;  width: 60%;}
+.setVerificationCodeBtn{ display: inline-block; height: 36px; width: 36%;border: 1px solid #999;border-radius: 3px;background-color: #fafafa;float: right;text-align: center;line-height: 36px;cursor: pointer; outline:none }
+.setVerificationCodeBtn:hover{background-color: #e8e8e8;}
+
+section{position: relative;z-index: 20;width: 100%;text-align: center;}
+.sectionBox{width: 9.5rem;  background: #fff;  margin: auto;margin-top: 15%;    text-align: center;  padding: 30px 0 20px;  box-shadow: 0 2px 5px rgba(0,0,0,.3);  border-radius: 4px;}
+
+.logoTitle{position: relative;top: -4px;font-size: 20px;}
+
+.holder{ margin: 0px auto; margin-top: 10px;width: 300px;position: relative;}
+.holderTwo{ margin: 0px auto; margin-top: 10px;width: 460px;position: relative;font-size: 14px;color: #333333;}
+.with-line{font-size: 16px;  color: #999;  margin: 0 auto;  position: relative;  text-align: center;}
+.with-line:before {  content: "";  border-top: 1px solid #999;  display: block;  position: absolute;  width: 80px;  top: 12px;  left: 0;  }
+.with-line:after {  content: "";  border-top: 1px solid #999;  display: block;  position: absolute;  width: 80px;  top: 12px;  right: 0;  }
+.with-lineTwo{font-size: 16px;  color: #999;  margin: 0 auto;  position: relative;  text-align: center;}
+.with-lineTwo:before {  content: "";  border-top: 1px solid #999;  display: block;  position: absolute;  width: 45px;  top: 12px;  left: 0;  }
+.with-lineTwo:after {  content: "";  border-top: 1px solid #999;  display: block;  position: absolute;  width: 45px;  top: 12px;  right: 0;  }
+.with-lineThree{font-size: 16px;  color: #999;  margin: 0 auto;  position: relative;  text-align: center;}
+.with-lineThree:before {  content: "";  border-top: 1px solid #999;  display: block;  position: absolute;  width: 180px;  top: 12px;  left: 0;  }
+.with-lineThree:after {  content: "";  border-top: 1px solid #999;  display: block;  position: absolute;  width: 180px;  top: 12px;  right: 0;  }
+.with-lineFour{font-size: 16px;  color: #999;  margin: 0 auto;  position: relative;  text-align: center;}
+.with-lineFour:before {  content: "";  border-top: 1px solid #999;  display: block;  position: absolute;  width: 70px;  top: 12px;  left: 0;  }
+.with-lineFour:after {  content: "";  border-top: 1px solid #999;  display: block;  position: absolute;  width: 70px;  top: 12px;  right: 0;  }

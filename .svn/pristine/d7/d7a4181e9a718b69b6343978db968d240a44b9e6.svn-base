@@ -1,0 +1,136 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase">tab切换标签--内容区域框(Canvas <code>.tabbable-custom </code>) <span
+                            class="text-danger">使用注意事项</span></span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a></a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Begin: life time stats -->
+                        <div class="portlet light portlet-fit portlet-datatable bordered">
+                            <div class="portlet-body">
+                                <ol>
+                                    <li> var echarts = require('echarts');//引入图形</li>
+                                    <li>例：
+                                        <pre>
+     afterRender:function(){
+        <span class="code-notes">//在页面初始化的时候第一个tab的可见区域中的图像是调用这个showSchoolSafe0()方法生成的图像所以要在这里调用</span>
+         this.showSchoolSafe0();
+     }
+    <span class="code-notes">//tab切换事件点击后应有对应的方法</span>
+    events: {
+       //tab切换事件
+       "click #canvas0": "canvas0",
+       "click #canvas1": "canvas1",
+        },
+    <span class="code-notes"> //对应点击时的方法调用下面的数据生成图像</span>
+        <span class="code-notes">//因为第一个图是在初始化的时候就已经是可见区域了所以不用延迟就可以进行绘制canvas</span>
+        canvas0: function () {
+            this.showSchoolSafe0();
+        },
+        <span class="code-notes">//初始化的时候第二个区域是不可见的，canvas不能绘制图形，所以要先让其可见后再进行canvas绘制，顾给此方法增加了定时器延迟执行200毫秒</span>
+        canvas1: function () {
+            setTimeout(function () {
+                _this.showSchoolSafe1();
+            }, 200)
+        },
+    <span class="code-notes">//以下是对应的canvas数据结构</span>
+        showSchoolSafe0: function (){
+        <span class="code-notes">//第一张canvas的数据及结构</span>
+            }
+        showSchoolSafe1: function (){
+        <span class="code-notes">//第二张canvas的数据及结构</span>
+           }
+      <span class="text-danger">具体详情请看baseSwitchingCanvas.html/baseSwitchingCanvas.js 的具体信息</span>
+</pre>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- End: life time stats -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase">tab切换标签--内容区域框(Canvas <code>.tabbable-custom </code>)</span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a></a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Begin: life time stats -->
+                        <div class="portlet light portlet-fit portlet-datatable bordered">
+                            <div class="portlet-body">
+                                <div class="tabbable-custom ">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#tab_4_1" data-toggle="tab" id="canvas0">tab1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_4_2" data-toggle="tab" id="canvas1"> tab2 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_4_3" data-toggle="tab" id="canvas2">tab3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_4_4" data-toggle="tab" id="canvas3">tab4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_4_5" data-toggle="tab" id="canvas4">tab5</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab_4_1">
+                                            <h4>tab1的内容</h4>
+                                            <div id="dataTableWrapper" style="margin-top: 16px; height: 500px;"></div>
+
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_2">
+                                            <h4>tab2的内容</h4>
+                                            <div id="dataTableWrapper1" style="margin-top: 16px; height: 500px;"></div>
+
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_3">
+                                            <h4>tab3的内容</h4>
+                                            <div id="dataTableWrapper2" style="margin-top: 16px; height: 500px;"></div>
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_4">
+                                            <h4>tab3的内容</h4>
+                                            <div id="dataTableWrapper3" style="margin-top: 16px; height: 500px;"></div>
+                                        </div>
+                                        <div class="tab-pane" id="tab_4_5">
+                                            <h4>tab3的内容</h4>
+                                            <div id="dataTableWrapper4" style="margin-top: 16px; height: 500px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End: life time stats -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- END FORM-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

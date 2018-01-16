@@ -304,20 +304,6 @@
                         </li>
                     </ul>
                 </li>
-                <li >
-                    <a href="javascript:;" >
-                        <i class="icon-docs"></i>
-                        <span class="title">登陆 Login</span>
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="#baseLoginPageIndex">
-                                <i class="fa fa-send-o"></i>LoginPage 1 <span class="text-denger">New</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
                 <li class="heading">
                     <h3 class="uppercase">多级目录</h3>
                 </li>

@@ -146,7 +146,7 @@ define(function (require) {
 
         //基础组件--综合登陆页
         baseLoginPageIndex: function () {
-            this.goIndex("pages/basePlugins/baseLoginPageIndex");
+            this.goIndex("pages/basePlugins/baseLoginPage/baseLoginPageIndex");
         },
 
         /* 最早的组件页实例 */
